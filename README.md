@@ -2,12 +2,7 @@
 # 지금은행  
 ----------  
 시연영상  
-[https://youtu.be/g3p50vwRdm8   ](https://www.youtube.com/watch?v=OO6RO_Wxfu8)  
-[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)]([[https://youtu.be/uLR1RNqJ1Mw?t=0s](https://www.youtube.com/watch?v=OO6RO_Wxfu8)](https://www.youtube.com/watch?v=OO6RO_Wxfu8))  
-{% include video id="OO6RO_Wxfu8" provider="youtube" %}  
-
-
-
+## 사진을 클릭해주세요  
 [![image](https://user-images.githubusercontent.com/100547978/174058158-99f65166-21ec-46c1-b798-3efc9e679b15.png)](https://www.youtube.com/watch?v=OO6RO_Wxfu8)  
 ----------  
 ![image](https://user-images.githubusercontent.com/100547978/173530904-794f0d43-3a4a-4a63-a55a-1afaa0988b05.png)
