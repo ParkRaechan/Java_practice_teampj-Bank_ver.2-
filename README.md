@@ -1,24 +1,11 @@
 # Java_practice_teamp-JIGMBank-
 # 지금은행  
 ----------  
-시연영상  
+시연  
 ## 사진을 클릭해주세요  
-[![image](https://user-images.githubusercontent.com/100547978/174058158-99f65166-21ec-46c1-b798-3efc9e679b15.png)](https://www.youtube.com/watch?v=OO6RO_Wxfu8)  
-
-    
-    
-    
-    
-    
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/OO6RO_Wxfu8" title="지금은행 테스트 영상02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-   
-   
-   
-   
-   
-   
-   
-   
+[![image](https://user-images.githubusercontent.com/100547978/174058158-99f65166-21ec-46c1-b798-3efc9e679b15.png)](https://www.youtube.com/watch?v=OO6RO_Wxfu8)   
+  
+  
 ----------  
 ![image](https://user-images.githubusercontent.com/100547978/173530904-794f0d43-3a4a-4a63-a55a-1afaa0988b05.png)
 ![image](https://user-images.githubusercontent.com/100547978/173530923-717eb014-ccc7-4f33-87ee-33b652a347d8.png)
