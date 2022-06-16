@@ -4,6 +4,9 @@
 시연영상  
 [https://youtu.be/g3p50vwRdm8   ](https://www.youtube.com/watch?v=OO6RO_Wxfu8)
 [![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)]([[https://youtu.be/uLR1RNqJ1Mw?t=0s](https://www.youtube.com/watch?v=OO6RO_Wxfu8)](https://www.youtube.com/watch?v=OO6RO_Wxfu8))
+
+  
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/OO6RO_Wxfu8" title="지금은행 테스트 영상02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 ----------  
 ![image](https://user-images.githubusercontent.com/100547978/173530904-794f0d43-3a4a-4a63-a55a-1afaa0988b05.png)
 ![image](https://user-images.githubusercontent.com/100547978/173530923-717eb014-ccc7-4f33-87ee-33b652a347d8.png)
