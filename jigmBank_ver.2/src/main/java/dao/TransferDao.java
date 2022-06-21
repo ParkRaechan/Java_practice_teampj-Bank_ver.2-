@@ -1,5 +1,7 @@
 package dao;
 
+import java.time.LocalDate;
+
 public class TransferDao extends Dao{
 
 	public TransferDao() {
@@ -52,6 +54,7 @@ public class TransferDao extends Dao{
 				sql = "update account set acbalance ='"+ymny2+"' where acno = '"+accnumr1+"'";
 				ps = con.prepareStatement(sql);
 				ps.executeUpdate();
+				trrecord(accnumr1,accnumr2,money);
 				return 1;
 				
 			}
@@ -84,4 +87,17 @@ public class TransferDao extends Dao{
 		catch (Exception e) { System.out.println( e );}
 		return 2;
 		}
+	
+	
+	
+	public void trrecord(String accnumr1,String accnumr2,String money) {
+		String sql = "insert into transefer(trfno,trfamount,trftime,achostno,acguestno) values("+1+","+money+","+LocalDate.now()+","+accnumr1+","+accnumr2+")";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+			
+			
+		}catch (Exception e) { System.out.println( e );}
+		}
+		
 }

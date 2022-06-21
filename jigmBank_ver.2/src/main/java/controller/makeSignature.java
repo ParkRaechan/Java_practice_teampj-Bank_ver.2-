@@ -32,14 +32,14 @@ public class makeSignature extends HttpServlet {
 		String rr = request.getParameter("rr");
 		
 		
-		String api_key = "NCSKVJ7MLDCGI0CM";
-	    String api_secret = "4STLLEOANTZHCPKAGOACTZZJJU6ATG4L";
+		String api_key = "NCSQ0KEGWFBFNLJE";
+	    String api_secret = "5OI78TRKALL13K24EFKSAJFMEOZQUTIF";
 	    Message coolsms = new Message(api_key, api_secret);
 
 	    // 4 params(to, from, type, text) are mandatory. must be filled
 	    HashMap<String, String> params = new HashMap<String, String>();
 	    params.put("to", phonenum00);
-	    params.put("from", "01041487895");
+	    params.put("from", "01093856144");
 	    params.put("type", "SMS");
 	    params.put("text", "인증번호는 "+rr+"입니다. 1분 안에 입력 해주세요.");
 	    params.put("app_version", "test app 1.2"); // application name and version
