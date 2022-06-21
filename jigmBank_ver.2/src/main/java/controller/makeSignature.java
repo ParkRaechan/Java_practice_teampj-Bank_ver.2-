@@ -35,7 +35,7 @@ public class makeSignature extends HttpServlet {
 		String api_key = "NCSQ0KEGWFBFNLJE";
 	    String api_secret = "5OI78TRKALL13K24EFKSAJFMEOZQUTIF";
 	    Message coolsms = new Message(api_key, api_secret);
-
+	    
 	    // 4 params(to, from, type, text) are mandatory. must be filled
 	    HashMap<String, String> params = new HashMap<String, String>();
 	    params.put("to", phonenum00);
@@ -43,8 +43,6 @@ public class makeSignature extends HttpServlet {
 	    params.put("type", "SMS");
 	    params.put("text", "인증번호는 "+rr+"입니다. 1분 안에 입력 해주세요.");
 	    params.put("app_version", "test app 1.2"); // application name and version
-
-	    //
 	    
 	    
 	    try {
@@ -54,7 +52,7 @@ public class makeSignature extends HttpServlet {
 	      System.out.println(e.getMessage());
 	      System.out.println(e.getCode());
 	    }	}
-
+		
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

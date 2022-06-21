@@ -1,6 +1,9 @@
 package dao;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import dto.Transfer;
 
 public class TransferDao extends Dao{
 
@@ -91,9 +94,22 @@ public class TransferDao extends Dao{
 	
 	
 	public void trrecord(String accnumr1,String accnumr2,String money) {
-		String sql = "insert into transefer(trfno,trfamount,trftime,achostno,acguestno) values("+1+","+money+","+LocalDate.now()+","+accnumr1+","+accnumr2+")";
+		
+		LocalDateTime now = LocalDateTime.now();   
+		String currentDateTime = now.format(DateTimeFormatter.ofPattern("yyyy/MM/dd-hh:mm:ss"));
+		
+		int money998 = Integer.parseInt(money);
+		
+		Transfer transfer = new Transfer(0,money998,currentDateTime,accnumr1,accnumr2);
+		
+		String sql = "insert into transfer(trfno,trfamount,trftime,achostno,acguestno) values(?,?,?,?,?)";
 		try {
 			ps = con.prepareStatement(sql);
+			ps.setInt(1, transfer.getTrfno() );
+			ps.setInt(2, transfer.getTrfamount() );
+			ps.setString(3, transfer.getTrftime() );
+			ps.setString(4, transfer.getAchostno() );
+			ps.setString(5, transfer.getAcguestno() );
 			ps.executeUpdate();
 			
 			

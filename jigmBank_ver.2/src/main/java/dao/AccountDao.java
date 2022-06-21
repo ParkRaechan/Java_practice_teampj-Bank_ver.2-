@@ -174,7 +174,7 @@ public class AccountDao extends Dao {
 			return 2;
 		}
 
-		//OTP용 계좌잠금
+		//OTP용 계좌잠금 1
 		public int accrock(String accnumr) {
 			String sql = "update account set acactive = '사용불가' where acno ='"+accnumr+"'";
 			try {
@@ -210,7 +210,7 @@ public class AccountDao extends Dao {
 		} // 계좌생성한 목록출력 end
 		
 
-		//OTP용 계좌잠금
+		//OTP용 계좌잠금 2
 		public int changemode(String acidno) {
 			String sql = "update account set acactive = '사용가능' where acidno ='"+acidno+"'";
 			try {

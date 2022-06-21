@@ -51,6 +51,6 @@ border: 1px solid gray;
 
 	  </div>
 	</div>
-	<script src="/jigmBank/js/inputpw2.js" type="text/javascript"></script>
+	<script src="/jigmBank_ver.2/js/inputpw2.js" type="text/javascript"></script>
 </body>
 </html>
