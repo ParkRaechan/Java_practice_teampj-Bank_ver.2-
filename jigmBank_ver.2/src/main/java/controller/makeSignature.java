@@ -44,7 +44,7 @@ public class makeSignature extends HttpServlet {
 	    params.put("text", "인증번호는 "+rr+"입니다. 1분 안에 입력 해주세요.");
 	    params.put("app_version", "test app 1.2"); // application name and version
 
-	    
+	    //
 	    
 	    
 	    try {
