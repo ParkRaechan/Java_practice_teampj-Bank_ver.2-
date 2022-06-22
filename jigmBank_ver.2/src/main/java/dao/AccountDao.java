@@ -220,6 +220,17 @@ public class AccountDao extends Dao {
 			}catch (Exception e) {System.out.println(e);}
 			return 2;
 		}
-		
+		//해당 계좌 이름 가져오기
+		public String getName(String accnumr) {
+			String sql = "select acname from account where acno='"+accnumr+"'";
+			try {
+				ps = con.prepareStatement(sql);
+				rs = ps.executeQuery();
+				while(rs.next() ) {
+					return rs.getString(1);
+				}
+			}catch (Exception e) {System.out.println(e);}
+			return "false";
+		}
 		
 } // class end

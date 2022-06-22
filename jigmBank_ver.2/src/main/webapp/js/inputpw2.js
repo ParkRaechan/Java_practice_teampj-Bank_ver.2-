@@ -304,12 +304,45 @@ function transfer1(){
 		success : function( result ){	/* 통신 성공시 받는 데이터 */
 			if( result == 1 ){  
 				alert("이체준비완료");
-				transfer2();
+				modalre(accnumr2,money);
 			}else{ 
 				alert("이체준비실패");
 			}
 		}
 	});	
+}
+let recipient = "";
+//이체완료 모달 띄우기 준비
+function modalre(accnumr2,money){
+	$.ajax({
+		url : "/jigmBank_ver.2/modalready" ,
+		data : { "accnumr2":accnumr2},
+		type : "POST",
+		success : function( result ){	/* 통신 성공시 받는 데이터 */
+			console.log(result);
+			if( result != "false"){  
+				recipient = result;
+				alert(recipient);
+				//이름이 ???로 나옴 => UTF-8 문제??? 확인해보자
+				modalcr(recipient,money);
+			}else{ 
+				alert("이체실패");
+			}
+		}
+	});	
+}
+//이체과정 모달 띄우기
+function modalcr(recipient,money){
+	let blank00 = '';
+	$("#box").html(blank00);
+	$("#accin").html(blank00);
+	$("#billboard").html(blank00);
+	let cf_cmt = '<div>'+
+'   '+recipient+'에게 '+money+'원을 보내시겠습니까?'+
+'   <button type="button" onclick="transfer2()">네</button>'+
+'   <button type="button" onclick="transfer2()">아니요</button></div>';
+	$("#comment").html(cf_cmt);
+	
 }
 //이체2-하는사람
 function transfer2(){
