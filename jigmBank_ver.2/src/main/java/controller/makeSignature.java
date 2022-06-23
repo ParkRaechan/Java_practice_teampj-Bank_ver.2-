@@ -31,10 +31,11 @@ public class makeSignature extends HttpServlet {
 		//난수
 		String rr = request.getParameter("rr");
 		
-		
-		String api_key = "NCSQ0KEGWFBFNLJE";
-	    String api_secret = "5OI78TRKALL13K24EFKSAJFMEOZQUTIF";
+		/////////////////문자api키,비번 입력 바람////////////////////
+		String api_key = "콜sms 문자api key";
+	    String api_secret = "콜sms 문자api secret";
 	    Message coolsms = new Message(api_key, api_secret);
+	    ////////////////////////////////////////////////////////
 	    
 	    // 4 params(to, from, type, text) are mandatory. must be filled
 	    HashMap<String, String> params = new HashMap<String, String>();
