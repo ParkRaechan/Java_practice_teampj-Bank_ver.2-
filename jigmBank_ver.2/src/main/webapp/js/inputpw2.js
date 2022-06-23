@@ -279,7 +279,7 @@ function finalcheck(){
 		success : function( result ){	/* 통신 성공시 받는 데이터 */
 			if( result == 1 ){  
 				alert("일치");
-				transfer1();
+				confirmpage1(accnumr2,money);
 			}else{ 
 				if(ghgh66==3){
 				//계좌잠금
@@ -303,8 +303,7 @@ function transfer1(){
 		type : "POST",
 		success : function( result ){	/* 통신 성공시 받는 데이터 */
 			if( result == 1 ){  
-				alert("이체준비완료");
-				modalre(accnumr2,money);
+				transfer2();
 			}else{ 
 				alert("이체준비실패");
 			}
@@ -312,8 +311,8 @@ function transfer1(){
 	});	
 }
 let recipient = "";
-//이체완료 모달 띄우기 준비
-function modalre(accnumr2,money){
+//이체확인 페이지띄우기 준비
+function confirmpage1(accnumr2,money){
 	$.ajax({
 		url : "/jigmBank_ver.2/modalready" ,
 		data : { "accnumr2":accnumr2},
@@ -322,28 +321,37 @@ function modalre(accnumr2,money){
 			console.log(result);
 			if( result != "false"){  
 				recipient = result;
-				alert(recipient);
-				//이름이 ???로 나옴 => UTF-8 문제??? 확인해보자
-				modalcr(recipient,money);
+				confirmpage2();
 			}else{ 
 				alert("이체실패");
 			}
 		}
 	});	
 }
-//이체과정 모달 띄우기
-function modalcr(recipient,money){
+//이체확인 페이지 띄우기
+function confirmpage2(){
 	let blank00 = '';
 	$("#box").html(blank00);
 	$("#accin").html(blank00);
 	$("#billboard").html(blank00);
-	let cf_cmt = '<div>'+
-'   '+recipient+'에게 '+money+'원을 보내시겠습니까?'+
-'   <button type="button" onclick="transfer2()">네</button>'+
-'   <button type="button" onclick="transfer2()">아니요</button></div>';
-	$("#comment").html(cf_cmt);
+	let cf_cmt1 = '<div class="sendaccountinput col-md-4 offset-4">'+
+'   '+recipient+'님에게 '+money+'원을 보내시겠습니까?'+
+'   <button type="button" onclick="transfer1()">네</button>'+
+'   <button type="button" onclick="">아니요</button></div>';
+	$("#comment").html(cf_cmt1);
 	
 }
+//이체완료 페이지
+function confirmpage3(){
+	let cf_cmt2  =  '<div class="sendaccountinput col-md-4 offset-4">'+
+'	<div>받는 분 : '+recipient+'</div>'+
+'	<div>보내는 금액 : '+money+'</div>'+
+'	<div>보내는 계좌 : '+accnumr1+'</div>'+
+'	<div>받는 계좌 : '+accnumr2+'</div>'+
+'</div>';
+	$("#comment").html(cf_cmt2);
+}
+
 //이체2-하는사람
 function transfer2(){
 
@@ -354,7 +362,7 @@ function transfer2(){
 		success : function( result ){	/* 통신 성공시 받는 데이터 */
 			if( result == 1 ){  
 				alert("이체완료");
-				window.location.href='main.jsp'
+				confirmpage3();
 			}else{ 
 				alert("이체실패");
 			}

@@ -42,7 +42,7 @@ public class modalready extends HttpServlet {
 			String result = AccountDao.getAccountDao().getName(accnumr2);
 
 			if(!(result.equals("false"))) {
-
+				response.setCharacterEncoding("UTF-8");
 				response.getWriter().print(result);
 				
 			}else {
