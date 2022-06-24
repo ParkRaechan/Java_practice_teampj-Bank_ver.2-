@@ -236,14 +236,13 @@ function removeone2(){
 	}
 }
 
-// 보내는 계좌 비밀번호 입력후 확인버튼 누른 후
-//비번보관 실행
+//키패드확인 실행
 function checkpw2(){
 	checkpw00();
 }
 
 
-//키패드입력확인
+//키패드확인
 function checkpw00(){
 	if(ttt2==1){
 		if(pww21.length==4){
@@ -271,7 +270,6 @@ let ghgh66=0;
 //otp확인
 function finalcheck(){
 	alert("otp번호 확인중");
-
 	$.ajax({
 		url : "/jigmBank_ver.2/finalotpconfirm" ,
 		data : { "accnumr1" : accnumr1,"pww22":pww22},
@@ -279,6 +277,7 @@ function finalcheck(){
 		success : function( result ){	/* 통신 성공시 받는 데이터 */
 			if( result == 1 ){  
 				alert("일치");
+				popupE();
 				confirmpage1(accnumr2,money);
 			}else{ 
 				if(ghgh66==3){
@@ -393,7 +392,7 @@ function checkaccpw2(pww21,achostno,acguestno){
 				com = '<h2>1분마다 바뀌는 OTP 난수 입력바람</h2>';
 				$("#comment").html(com);
 				/////OTP발생 팝업창///
-				popup();
+				popupS();
 				///////////////////
 			}else{ 
 				matchaccpw = false;
@@ -428,14 +427,20 @@ function key3check(){
 	}); 
 }
 
-
-function popup(){
+//팝업창 열고 닫기 담아내기
+let windowpopup;
+function popupS(){
     var url = "/jigmBank_ver.2/otppage/firewall.jsp";
     var name = "popup";
     var option = "width = 500, height = 500, top = 100, left = 200, location = no"
-    window.open(url, name, option);
+    windowpopup = window.open(url, name, option);
 }
 
+function popupE(){
+	windowpopup.close();
+}
+
+ 
 function changeaccno(acno){
 	let arr2 = acno.slice(undefined,3);
 	let arr3 = acno.slice(3,6);

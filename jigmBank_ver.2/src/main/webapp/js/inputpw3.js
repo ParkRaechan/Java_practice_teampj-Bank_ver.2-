@@ -181,7 +181,19 @@ function gear(otpno){
 	let rr00 = '<div>'+rr+'</div>';
 	$("#box0000").html(rr00);
 }
+////otp난수집어넣고 창 닫기///
+function gear2(otpno){
+	/////otp랜덤생성//////
+	let r = random();
+	putrand(otpno,r[0],r[1],r[2],r[3],r[4],r[5]);
+}
 
 function firewallmodechange(){
 	$("#firewallagain").css({"display" : "none"});
 }
+
+
+
+
+//윈도우창 종료될때 나오는 이벤트
+window.addEventListener('unload', gear2(pww31));
