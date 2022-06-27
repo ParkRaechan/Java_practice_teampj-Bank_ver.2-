@@ -3,7 +3,8 @@
 ----------  
 시연  
 ## 사진을 클릭해주세요  
-[![image](https://user-images.githubusercontent.com/100547978/174058158-99f65166-21ec-46c1-b798-3efc9e679b15.png)](https://www.youtube.com/watch?v=OO6RO_Wxfu8)   
+[![지금은행썸네일](https://user-images.githubusercontent.com/100547978/175907323-8cd1fa88-9932-44aa-9776-e9cad01b81d0.png)
+](https://www.youtube.com/watch?v=OO6RO_Wxfu8)   
   
   
 ----------  
