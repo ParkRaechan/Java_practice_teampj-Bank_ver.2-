@@ -173,7 +173,25 @@ public class AccountDao extends Dao {
 			catch (Exception e) { System.out.println( e );}
 			return 2;
 		}
-
+		//이체내역 확인용 메소드
+		public int checkaccpw3(String pww21,String achostno) {
+			
+			String sql = "select * from account where acpw = '"+pww21+"' and acno = '"+achostno+"' and acactive='사용가능'";
+			try {
+				ps = con.prepareStatement(sql);
+				rs = ps.executeQuery();
+				if(rs.next()) {
+					//sql = "select * from account where acno = '"+acguestno+"'";
+					//ps = con.prepareStatement(sql);
+					//rs = ps.executeQuery();
+					//if(rs.next()) {
+						return 1;
+					//}
+				}
+			}
+			catch (Exception e) { System.out.println( e );}
+			return 2;
+		}
 		//OTP용 계좌잠금 1
 		public int accrock(String accnumr) {
 			String sql = "update account set acactive = '사용불가' where acno ='"+accnumr+"'";

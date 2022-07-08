@@ -31,14 +31,13 @@ a:hover{ color:#a284c0;}
 				<div class="headerlist col-md-6 offset-3">
 					<ul class="nav"> <!-- nav : li 가로배치  -->
 
-						<li><a href="#" onclick="pagechange('addaccount')">계좌 생성</a></li>
-						<li><a href="#" onclick="pagechangesec('addsecuritycard')">보안카드 생성</a></li>
-						<li><a href="#" onclick="pagechange('createsecurity')">OTP 생성</a></li>
-						<li><a href="#" onclick="pagechangesec('usesccard')">보안카드 이체</a></li>
-						<li><a href="#" onclick="pagechange('transfer')">OTP 이체</a></li>
-						<li>상품</li>
-						<li>예적금</li>
-						<li>환율</li>
+						<li><a href="#" onclick="pagechange('addaccount')">계좌 생성</a></li>&nbsp&nbsp
+						<li><a href="#" onclick="pagechangesec('addsecuritycard')">보안카드 생성</a></li>&nbsp&nbsp
+						<li><a href="#" onclick="pagechange('createsecurity')">OTP 생성</a></li>&nbsp&nbsp
+						<li><a href="#" onclick="pagechangesec('usesccard')">보안카드 이체</a></li>&nbsp&nbsp
+						<li><a href="#" onclick="pagechange('transfer')">OTP 이체</a></li>&nbsp&nbsp
+						<li><a href="#" onclick="pagechange('transferhistory')">이체 내역</a></li>&nbsp&nbsp
+						<li>상품</li>&nbsp&nbsp
 						
 						<li><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						</button> </li>
