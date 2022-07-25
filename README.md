@@ -6,9 +6,7 @@
 [![지금은행썸네일](https://user-images.githubusercontent.com/100547978/175907323-8cd1fa88-9932-44aa-9776-e9cad01b81d0.png)
 ](https://www.youtube.com/watch?v=OO6RO_Wxfu8)   
   
-  
 ---------- 
-## about...지금은행(jigm Bank) project  
   
 ![image](https://user-images.githubusercontent.com/100547978/173530904-794f0d43-3a4a-4a63-a55a-1afaa0988b05.png)
 ![image](https://user-images.githubusercontent.com/100547978/173530923-717eb014-ccc7-4f33-87ee-33b652a347d8.png)
