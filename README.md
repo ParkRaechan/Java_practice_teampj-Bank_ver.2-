@@ -1,8 +1,8 @@
 # Java_practice_teamp-JIGMBank-
 # 지금은행_ver2.0(버젼2.0_개인진행_박래찬)
 ----------  
-시연  
-## 사진을 클릭해주세요  
+  
+## 시연영상 - 사진을 클릭해주세요  
 [![지금은행썸네일](https://user-images.githubusercontent.com/100547978/175907323-8cd1fa88-9932-44aa-9776-e9cad01b81d0.png)
 ](https://www.youtube.com/watch?v=OO6RO_Wxfu8)   
   
